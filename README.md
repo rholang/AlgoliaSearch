@@ -1,18 +1,24 @@
 # DocSearch scraper
 
 This repository holds the code of the DocSearch scraper used to power the hosted
-version of DocSearch.
+version of DocSearch. DocSearch scaper is used as search for the [rholang/rholang.github.io] implementation. 
 
-If you're looking for a way to add DocSearch to your site, the easiest solution
-is to [apply to DocSearch][1]. To run the scraper yourself, you're at the right
-place.
+## Installation
 
-## Installation and Usage
+## Pre-requisites
+1. Install Python 3.6. Only this version have no error messages displayed.
+2. Install pipenv
+2.1 run command line with admin rights
+2.2 pip install --user pipenv
+2.3 print out where the path of python is with: py -m site --user-site
+2.4 set path variable (change path to your path) : setx PATH "%PATH%;C:\Users\jetbrains\AppData\Roaming\Python\Python36\Scripts"
 
-Please check the [dedicated documentation][2] to see how you can install and
-run DocSearch yourself.
 
-This project supports Python 3.6+
+## Setup project
+1. Open this project with vscode -> cd into /DocSearch-Srapper
+2. 
+
+
 
 ## Related projects
 
