@@ -6,34 +6,27 @@ version of DocSearch. DocSearch scaper is used as search for the [rholang/rholan
 ## Pre-requisites
 - Install Python 3.6. Only this version have no error messages displayed.
 - Install pipenv
-- run command line with admin rights
+  - run command line with admin rights
   - pip install --user pipenv
   - print out where the path of python is with: py -m site --user-site
   - set path variable (change path to your path) : setx PATH "%PATH%;C:\Users\jetbrains\AppData\Roaming\Python\Python36\Scripts"
 
-
 ## Setup project
-1. Open this project with vscode -> cd into /DocSearch-Srapper
-2. 
+- Open this project with vscode -> cd into /DocSearch-Srapper
+- pipenv install --dev
+- rename .env.example to .env
+
+## Folder structure
+- .evn 
+  - keys from algolia and chromedriver path
+  - change APPLICATION_ID, API_KEY to yours from algolia
+  - change CHROMEDRIVER_PATH to your path 
+  
+- config/website.json
+  - config, what css selector to parse on your website
+
+## Start scrapping
+- pipenv run python ./docsearch run ./configs/website.json
 
 
 
-
-
-## Related projects
-
-DocSearch is made of 3 repositories:
-
-- [algolia/DocSearch][3] contains the `docsearch.js` code source and the
-  documentation website.
-- [algolia/docsearch-configs][4] contains the JSON files representing all the
-  configs for all the documentations DocSearch is powering
-- [algolia/docsearch-scraper][5] contains the scraper we use to extract data
-  from your documentation. The code is open source and you can run it from a
-  Docker image
-
-[1]: https://community.algolia.com/docsearch/
-[2]: https://community.algolia.com/docsearch/run-your-own.html
-[3]: https://github.com/algolia/docsearch
-[4]: https://github.com/algolia/docsearch-configs
-[5]: https://github.com/algolia/docsearch-scraper
