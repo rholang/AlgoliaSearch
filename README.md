@@ -8,20 +8,17 @@ version of DocSearch. DocSearch scaper is used as search for the [rholang/rholan
 ## Pre-requisites
 1. Install Python 3.6. Only this version have no error messages displayed.
 2. Install pipenv
-  1. run command line with admin rights
-  2. pip install --user pipenv
-  3. print out where the path of python is with: py -m site --user-site
-  4. set path variable (change path to your path) : setx PATH "%PATH%;C:\Users\jetbrains\AppData\Roaming\Python\Python36\Scripts"
+  - run command line with admin rights
+  - pip install --user pipenv
+  - print out where the path of python is with: py -m site --user-site
+  - set path variable (change path to your path) : setx PATH "%PATH%;C:\Users\jetbrains\AppData\Roaming\Python\Python36\Scripts"
 
 
 ## Setup project
 1. Open this project with vscode -> cd into /DocSearch-Srapper
 2. 
 
-Markup : 1. A numbered list
-              1. A nested numbered list
-              2. Which is numbered
-          2. Which is numbered
+
 
 ## Related projects
 
